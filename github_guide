@@ -1,0 +1,53 @@
+1) Değişiklikleri çalışma alanına eklemek (stage):
+        -> git add dosya-ismi
+                    • Ya da tüm değişiklikleri eklemek için:
+        -> git add .
+2) Değişiklikleri commit etmek (kaydetmek):
+        -> git commit -m "Yaptığın değişikliğin kısa açıklaması"
+3) Değişiklikleri GitHub’a göndermek (push)
+        -> git push
+                    • Eğer branch ilk defa push ediliyorsa:
+        -> git push -u origin branch-ismi
+                    • Sonrasında sadece git push yeterli olur.
+4) Değişikliklerin durumunu görmek:
+        -> git status
+                    • Çalışma dizinindeki değişiklikleri ve hangi dosyaların eklenip eklenmediğini gösterir.
+5) Commit geçmişini görmek:
+        -> git log
+6) Değişiklikleri görmek (diff):
+        -> git diff 
+                     • Henüz commit edilmemiş değişiklikleri satır satır gösterir. 
+7) Son commit’i geri almak (örneğin, commit mesajını değiştirmek için)
+        -> git commit --amend
+8) yerelde branch oluşturma : git checkout -b yeni-branch
+        -> Bu branch'i GitHub'a (remote) göndermediğin sürece orada görünmez.
+9) branch'i GitHub'a göndermek : git push -u origin yeni-branch
+        -> -u ile branch’ı remote’a gönderirken tracking (izleme) bağlantısı kurarsın.
+        -> Böylece sonraki git pull ve git push komutları kolaylaşır.
+10) yerel branch silme : git branch -d branch-ismi
+        -> Eğer branch'te merge edilmemiş değişiklik varsa hata verir 
+                    • Git sana uyarı verir ve silmeyi engeller, çünkü bu branch’teki değişiklikler henüz başka bir branch’e aktarılmamış, yani kaybolabilir.
+                    • Ama eğer emin olursan ve zorla silmek istersen:
+        -> Zorla silmek için : git branch -D branch-ismi
+11) GitHub (remote) branch silme :
+        -> git push origin --delete branch-ismi
+12) Branch değiştirme:
+        -> git checkout branch-ismi
+                    • veya yeni Git sürümünde:
+        -> git switch branch-ismi
+
+13) yerel branch'leri listele:
+        -> git branch
+   uzak (remote) branch'leri listele:
+        -> git branch -r
+   tüm branch'leri listele:
+        -> git branch -a
+
+
+14) Uzaktaki değişiklikleri yerel kopyaya çekmek (pull):
+        -> git pull
+                    • Bu, takip edilen branch’ten en son değişiklikleri indirir ve birleştirir (merge).
+
+
+15) Pull Request (PR) Nedir?
+        -> Pull Request (kısaca PR), GitHub üzerinden yapılan "Kod değişikliğini ana branch'e ekleyelim mi?" teklifidir.
