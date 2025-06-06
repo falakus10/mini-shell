@@ -48,7 +48,6 @@
         -> git pull
                     • Bu, takip edilen branch’ten en son değişiklikleri indirir ve birleştirir (merge).
 
-
 15) Pull Request (PR) Nedir?
         -> Pull Request (kısaca PR), GitHub üzerinden yapılan "Kod değişikliğini ana branch'e ekleyelim mi?" teklifidir.
                     • Kendi branch’imde yaptığım değişiklikleri, başka bir branch’e (genellikle main) eklemek için birleştirme isteği gönderiyorum.
@@ -57,5 +56,3 @@
         -> git branch --set-upstream-to=origin/yeni-branch yeni-branch
                     • Eğer zaten branch2’deysen şu kısa hali de olur:
         -> git branch --set-upstream-to=origin/yeni-branch
-
-
