@@ -62,5 +62,9 @@
 19) • Git branchler tam bir kopyadır aslında: yeni bir branch açtığında, açıldığı branch’in (genelde main) mevcut hali baz alınır.
 Yani yeni branch oluşturduğunda, o branch main branch’inin o anki snapshot’ı ilebaşlar.
 Branch’te hiç değişiklik yapmasan bile, main’deki dosyalar yeni branch’te görünür çünkü branch oluşturulurken içeriği kopyalanır.
-
-update1++
+20) • GitHub’da bir PR’yi birleştirmek sadece uzak (remote) depoyu günceller.
+    • Senin bilgisayarındaki (VSCode'daki) kopya otomatik olarak güncellenmez.
+    Ne Yapmalısın?
+    Eğer şu an PR yaptığın branch'teysen (örnek: feature-x) :
+    git pull
+    Bu komut, uzaktaki (origin/feature-x) branch’teki son hali senin VSCode’daki kopyana getirir.
