@@ -56,3 +56,5 @@
         -> git branch --set-upstream-to=origin/yeni-branch yeni-branch
                     • Eğer zaten branch2’deysen şu kısa hali de olur:
         -> git branch --set-upstream-to=origin/yeni-branch
+17) Silinen dosyaları Git’e “ben onları sildim” diye bildirmen (stage etmen) gerekir.
+        -> git rm main.c update.c
