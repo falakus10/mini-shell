@@ -57,4 +57,8 @@
                     • Eğer zaten branch2’deysen şu kısa hali de olur:
         -> git branch --set-upstream-to=origin/yeni-branch
 17) Silinen dosyaları Git’e “ben onları sildim” diye bildirmen (stage etmen) gerekir.
-        -> git rm main.c update.c
+        -> git rm main.c update.
+18) • Git’te origin kelimesi genellikle uzaktaki (remote) depo anlamına gelir ve varsayılan isimdir.
+19) • Git branchler tam bir kopyadır aslında: yeni bir branch açtığında, açıldığı branch’in (genelde main) mevcut hali baz alınır.
+Yani yeni branch oluşturduğunda, o branch main branch’inin o anki snapshot’ı ilebaşlar.
+Branch’te hiç değişiklik yapmasan bile, main’deki dosyalar yeni branch’te görünür çünkü branch oluşturulurken içeriği kopyalanır.
