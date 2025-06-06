@@ -49,6 +49,3 @@
                     • Bu, takip edilen branch’ten en son değişiklikleri indirir ve birleştirir (merge).
 
 
-15) Pull Request (PR) Nedir?
-        -> Pull request (PR), sadece main branch'e değil, herhangi bir branch'e yapılabilir.
-        -> Pull Request, bir branch’te yaptığın değişiklikleri başka bir branch'e birleştirmek (merge etmek) için GitHub üzerinden yapılan bir istektir.
