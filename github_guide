@@ -67,4 +67,6 @@ Branch’te hiç değişiklik yapmasan bile, main’deki dosyalar yeni branch’
     Ne Yapmalısın?
     Eğer şu an PR yaptığın branch'teysen (örnek: feature-x) :
     git pull
-    Bu komut, uzaktaki (origin/feature-x) branch’teki son hali senin VSCode’daki kopyana getirir.
+    Bu komut, uzaktaki (origin/feature-x) branch’teki son hali senin VSCode’daki kopyana getirir. 
+
+update1
